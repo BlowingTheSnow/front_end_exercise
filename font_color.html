@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        span{
+            font-family: 楷体,Arial;
+            font-weight: bold;
+
+        }
+        h1{
+            font-size: 10em;
+            font-size: 50px;/*会覆盖上面的*/
+        }
+        .c2{
+            font: oblique bolder 10px/20px "楷体";/*字体风格为斜体   加粗 大小  行高  字体类型*/
+        }
+        .c3{
+            color: rgb(0,0,0);
+        }
+        .c4{
+            color: rgba(0,255,255,0);/*a alpha  透明度*/
+        }
+        .c5{
+            color: rgba(0,255,255,1);/*a alpha  透明度*/
+            text-align: right;
+        }
+        .c6{
+            color: red;
+        }
+        .c7{
+            text-indent: 2em;/*首行缩进两个字*/
+            height: 300px;
+            line-height: 300px;/*行高和块高度一致就可以上下居中*/
+            background: #640080;
+            text-decoration: underline;/*下划线*/
+        }
+        img,span{
+            vertical-align: middle;/*参照物水平居中对齐*/
+        }
+        a{
+            text-decoration: none;/*超链接去除下划线*/
+        }
+    </style>
+
+</head>
+<body>
+<h1>我的中国心！</h1>
+<p>中国<span>第一</span>人</p>
+<p>中国<span>No.1</span>人</p>
+<p>我是一个中国人</p>
+<p class="c2">我是一个中国人</p>
+<p class="c3">我是一个中国人</p>
+<p class="c4">我是一个中国人</p>
+<p class="c5">上一行字全透明需要选中才能看到</p>
+<p class="c6">上一行字在最右边</p>
+
+<p class="c7">首行缩进2个字,设置了行高和背景！首行缩进2个字,设置了行高和背景！首行缩进2个字,设置了行高和背景！</p>
+<p><img src="https://baike.baidu.com/pic/css%E9%80%89%E6%8B%A9%E5%99%A8/2819686/1/d53f8794a4c27d1e53a641ee19d5ad6eddc43813?fr=lemma&fromModule=lemma_top-image&ct=single#aid=1&pic=d53f8794a4c27d1e53a641ee19d5ad6eddc43813" alt="无法显示替代的话">超链接的一张图</p>
+<p><img src="pic1.png" alt="无法显示显示这段话"><span>这是一张图片</span></p>
+</body>
+</html>
