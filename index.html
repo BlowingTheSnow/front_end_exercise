@@ -1,0 +1,19 @@
+
+
+<article id="webslides" class="vertical" codeTheme="prism-one-dark" debug="true" loop="true"></article>
+<script>
+    function toggleImage({target}) {
+        const {src} = target;
+        if (src === 'https://p5.ssl.qhimg.com/t015b445bef7dede221.jpg') {
+            target.src = 'https://p3.ssl.qhimg.com/t019ce88e6c2454a867.jpg';
+        } else target.src = 'https://p5.ssl.qhimg.com/t015b445bef7dede221.jpg';
+    }
+
+    (async () => {
+        webslides.innerHTML = await JCode.getCustomCode();
+        new WebSlides();
+        const canteen = document.querySelector('.canteen');
+        console.log(canteen.parentNode);
+        canteen.addEventListener('click', toggleImage);
+    })();
+</script>

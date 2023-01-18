@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+<h1>Internet Explorer 9</h1>
+<p>Windows Internet Explorer 9（简称 IE9）于 2011 年 3 月 14 日发布.....</p>
+<div id="modeBtn" onclick="func()">☀</div>
+<!--<div id="modeBtn" onclick="func()">🌙</div>-->
+<p>Windows Internet Explorer 9（简称 IE9）于 2011 年 3 月 14 日发布.....</p>
+<p>pppWindows Internet Explorer 9（简称 IE9）于 2011 年 3 月 14 日发布.....</p>
+
+<script>
+  // const btn = document.getElementById('modeBtn');
+  function func() {
+    const btn = document.getElementById('modeBtn');
+    const body = document.body;
+    //e.target就是鼠标点击的对象的父元素，innerHTML就是里面的text内容。
+    if (btn.innerHTML == '☀') {
+      // body.style.backgroundColor = 'black';
+      // body.style.color = 'white';
+      btn.innerHTML = "🌙";
+    } else {
+      // body.style.backgroundColor = 'white';
+      // body.style.color = 'black';
+      btn.innerHTML = '☀';
+    }
+    // btn.addEventListener('click', func());
+  }
+  // btn.addEventListener('click',  func(e));
+</script>
+</body>
+
+</html>
